@@ -40,7 +40,7 @@ nav {
     height: 60px;
     width: 100%;
     background-color: var(--nav-color);
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 body.dark nav {
@@ -290,31 +290,31 @@ body.dark .search-field i {
     }
 }
 
-.main-logo{
+.main-logo {
     width: 170px;
     position: relative;
     top: 5px;
 }
 
-.heroSection{
+.heroSection {
     /* margin-top: 10px; */
     height: 90vh;
     width: 100%;
     /* background-color: #6877a1; */
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
-    border: 5px solid;
+    justify-content: space-evenly;
+    /* border: 5px solid; */
 }
 
-.heroContent h1{
+.heroContent h1 {
     font-size: 60px;
     font-weight: 600;
     color: #000000;
     margin-top: 20px;
 }
 
-.heroContent h3{
+.heroContent h3 {
     font-size: 30px;
     font-weight: 900;
     color: var(--nav-color);
@@ -322,15 +322,15 @@ body.dark .search-field i {
     margin-bottom: 20px;
 }
 
-.heroContent p{
+.heroContent p {
     font-size: 20px;
     font-weight: 400;
-    color:#5a5a5a;
+    color: #5a5a5a;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-#heroBtn>button{
+#heroBtn>button {
     padding: 15px;
     background-color: #4A78F5;
     border-radius: 7px;
@@ -338,47 +338,288 @@ body.dark .search-field i {
     color: white;
 }
 
-#heroBtn>button:hover{
+#heroBtn>button:hover {
     background-color: #234bbb;
     color: white;
 }
 
-#heroBtn>button:active{
+#heroBtn>button:active {
     scale: 0.9;
 }
 
-#heroBtn{
+#heroBtn {
     display: flex;
     column-gap: 50px;
 }
 
-#heroBtn>a{
+#heroBtn>a {
     margin-top: 10px;
     text-decoration: none;
 }
 
-#heroBtn>a:hover{
+#heroBtn>a:hover {
     color: black;
 }
 
-.secondSection{
+.secondSection {
     height: 100vh;
     width: 100%;
     /* background-color: #6877a1; */
-    display: flex;
+    /* display: flex; */
+    text-align: center;
 }
 
-.secondSection-heading{
+.secondSection-heading {
     margin: 0 auto;
     padding: 50px;
 }
 
-.secondSection-heading>p{
+.secondSection-heading>p {
     text-align: center;
     font-size: 20px;
     color: blue;
 }
 
-.secondSection-heading>h1>span{
+.secondSection-heading>h1>span {
     color: blue;
+}
+
+.secondSection-firstCard>img {
+    width: 130px;
+}
+
+.secondSection-Body {
+    display: flex;
+    flex-direction: row;
+    padding: 90px;
+    justify-content: space-around;
+}
+
+.login-signup-buttons {
+    display: flex;
+    flex-direction: row;
+    /* column-gap: 20px; */
+    /* border: 3px solid; */
+    position: relative;
+    left: 150px;
+}
+
+#register-btn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#register-btn:hover {
+    background-color: #3838e480;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+#login-btn {
+    color: white;
+    background-color: blue;
+    border: 1px solid blue;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* padding: 8px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#login-btn:hover {
+    /* background-color: #cacad81a; */
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+/*assign full width inputs*/
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+}
+
+/*set a style for the buttons*/
+.modal-btn {
+    background-color: #121fd1;
+    border-radius: 5px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+/* set a hover effect for the button*/
+.modal-btn:hover {
+    background-color: #0d0b99;
+    color: white;
+}
+
+.modal-btn:active{
+    scale: 0.9;
+}
+
+.login-btn{
+    padding: 7px 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(52, 119, 196);
+    margin-top: 10px;
+    color: white;
+}
+
+.login-btn:hover{
+    background-color: rgb(29, 81, 141);
+    color: white;
+}
+
+.login-btn:active{
+    scale: 0.9;
+}
+
+.ft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ft>p{
+    position: relative;
+    left: 70px;
+    top: 14px;
+}
+/*set extra style for the cancel button*/
+.cancelbtn {
+    position: relative;
+    left:80%;
+    top: -30px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 8px 18px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.cancelbtn:hover{
+    background-color: #ffffff56;
+}
+
+.cancelbtn:active{
+    scale: 0.9;
+}
+
+/*set padding to the container*/
+.container {
+    padding: 26px;
+    width: 100% !important;
+}
+
+/*set the forgot password text*/
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/*set the Modal background*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    /* padding-top: 60px;    */
+}
+
+/*style the model content box*/
+.modal-content {
+    background-color: #bbbbbb9f !important;
+    /* filter: blur(px); */
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/*style the close button*/
+.close {
+    position: absolute; 
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgba(250, 0, 0, 0.966);
+    cursor: pointer;
+}
+
+/* add zoom animation*/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
 }

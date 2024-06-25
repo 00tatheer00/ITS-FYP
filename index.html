@@ -13,6 +13,11 @@
     <!-- ===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <title>Responsive Navigation Menu Bar</title>
 </head>
 
@@ -26,7 +31,7 @@
 
             <div class="menu">
                 <div class="logo-toggle">
-                    <span class="logo"><a href="#">CodingLab</a></span>
+                    <span class="logo"><a href="#"></a></span>
                     <i class='bx bx-x siderbarClose'></i>
                 </div>
 
@@ -56,6 +61,53 @@
                         <i class='bx bx-search'></i>
                     </div>
                 </div>
+                <div class="login-signup-buttons">
+                    <div> <button id="register-btn">Register</button></div>
+                    <!--Step 1 : Adding HTML-->
+                    <button class="modal-btn" onclick="document.getElementById('id01').style.display='block'"
+                        style="width:auto;">
+                        Login
+                    </button>
+
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">×</span>
+                            </div>
+
+                            <div class="container">
+                                <label><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                <label><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <div class="ft">
+                                    <button type="submit" class="login-btn">Login</button>
+                                    <p><input type="checkbox" class="rm"> Remember me</p>
+                                    <span class="psw">| Forgot <a href="#">password?</a></span>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <script>
+                        var modal = document.getElementById('id01');
+                        window.onclick = function (event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                </div>
             </div>
         </div>
     </nav>
@@ -84,9 +136,45 @@
                 <span>3 easy steps</span>
             </h1>
         </div>
+        <div class="secondSection-Body">
+            <div class="secondSection-firstCard">
+                <img src="./Assets/Images/copywriting-writing-icon-document-pencil-writing-education-concept-3d-vector-illustration_365941-595.avif"
+                    alt="">
+                <h3>Get Started</h3>
+                <p><a href="#">Register</a></p>
+            </div>
+            <div class="secondSection-firstCard">
+                <img src="./Assets/Images/copywriting-writing-icon-document-pencil-writing-education-concept-3d-vector-illustration_365941-595.avif"
+                    alt="">
+                <h3>Get Started</h3>
+                <p><a href="#">Register</a></p>
+            </div>
+            <div class="secondSection-firstCard">
+                <img src="./Assets/Images/copywriting-writing-icon-document-pencil-writing-education-concept-3d-vector-illustration_365941-595.avif"
+                    alt="">
+                <h3>Get Started</h3>
+                <p><a href="#">Register</a></p>
+            </div>
+            <div class="secondSection-firstCard">
+                <img src="./Assets/Images/copywriting-writing-icon-document-pencil-writing-education-concept-3d-vector-illustration_365941-595.avif"
+                    alt="">
+                <h3>Get Started</h3>
+                <p><a href="#">Register</a></p>
+            </div>
+        </div>
     </div>
 
-    <script src="./nav.js"></script>
+
+
+
+
+
+
+
+
+
+    <script src="./nav.js">
+    </script>
 </body>
 
 </html>
